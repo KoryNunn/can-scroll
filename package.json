@@ -1,0 +1,28 @@
+{
+  "name": "can-scroll",
+  "version": "0.0.0",
+  "description": "Return the number of pixels an element can be scrolled by in all directions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grape": "^1.0.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "grape": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KoryNunn/can-scroll.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KoryNunn/can-scroll/issues"
+  },
+  "homepage": "https://github.com/KoryNunn/can-scroll"
+}
