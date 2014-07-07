@@ -1,6 +1,13 @@
 var canScroll = require('../'),
     test = require('grape');
 
+GLOBAL.window = {
+    getComputedStyle: function() {
+        return {
+            overflow: 'auto'
+        };
+    }
+}
 test('can not scroll', function(t){
     t.plan(1);
 

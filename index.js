@@ -19,12 +19,14 @@ function canScroll(element){
         offsetParent = element.offsetParent;
 
     while(offsetParent){
-        var parentScroll = canScrollSelf(offsetParent);
+        if(window.getComputedStyle(offsetParent).overflow !== 'visible'){
+            var parentScroll = canScrollSelf(offsetParent);
 
-        result.up+=parentScroll.up;
-        result.down+=parentScroll.down;
-        result.left+=parentScroll.left;
-        result.right+=parentScroll.right;
+            result.up+=parentScroll.up;
+            result.down+=parentScroll.down;
+            result.left+=parentScroll.left;
+            result.right+=parentScroll.right;
+        }
 
         offsetParent = offsetParent.offsetParent;
     }
