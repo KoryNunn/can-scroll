@@ -28,7 +28,10 @@ function canScroll(element){
         offsetParent = element.offsetParent;
 
     while(offsetParent){
-        var computedStyle = window.getComputedStyle(offsetParent);
+        var computedStyle;
+        if(offsetParent instanceof Element){
+            computedStyle = window.getComputedStyle(offsetParent);
+        }
         if(!computedStyle || computedStyle.overflow !== 'visible'){
             var parentScroll = canScrollSelf(offsetParent);
 

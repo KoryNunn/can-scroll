@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "grape": "^1.0.0"
+    "tape": "^3.0.3"
   },
   "directories": {
     "test": "test"
