@@ -1,6 +1,6 @@
 {
   "name": "can-scroll",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Return the number of pixels an element can be scrolled by in all directions",
   "main": "index.js",
   "scripts": {
